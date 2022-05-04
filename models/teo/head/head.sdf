@@ -89,7 +89,7 @@
         </geometry>
       </collision>
       <sensor name='xtion_rgbd' type='depth'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0.0 0 0.0 0 -0 0</pose>
         <camera>
           <horizontal_fov>1.01</horizontal_fov>
           <image>
@@ -108,32 +108,33 @@
 						<p1>0.0</p1>
 						<p2>0.0</p2>
 	  			</distortion>
-          <lens>
+          <!--lens>
             <intrinsics>
               <fx>525</fx>
               <fy>525</fy>
               <cx>319.5</cx>
               <cy>239.5</cy>
             </intrinsics>
-          </lens>
+          </lens-->
         </camera>
         <always_on>1</always_on>
-        <update_rate>30</update_rate>
-        <visualize>1</visualize>
+        <update_rate>10</update_rate>
+        <visualize>0</visualize>
         <plugin name='xtion_rgbd_plugin' filename='libgazebo_yarp_depthCamera.so'>
           <yarpConfigurationFile>model://teo/conf/gazebo_xtion_rgbd.ini</yarpConfigurationFile>
         </plugin>
       </sensor>
     </link>
 
+
     <joint name='FrontalNeck' type='revolute'>
       <parent>TEO_head::AxialNeck_link</parent>
       <child>TEO_head::FrontalNeck_link</child>
       <axis>
-        <xyz>0 1 0</xyz>
+        <xyz>0 -1 0</xyz>
         <limit>
           <lower>-0.51</lower>
-          <upper>0.15</upper>
+          <upper>0.349066</upper>
         </limit>
         <dynamics>
           <damping>0.001</damping>
@@ -141,6 +142,9 @@
         </dynamics>
       </axis>
     </joint>
+    <plugin name='test_base_state' filename='libgazebo_yarp_basestate.so'>
+      <yarpConfigurationFile>model://teo/conf/camera_base_state.ini</yarpConfigurationFile>
+    </plugin>
 
     <plugin name='controlboard_head' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://teo/conf/gazebo_teo_head.ini</yarpConfigurationFile>

@@ -96,7 +96,7 @@
       <axis>
         <xyz>0 1 0</xyz>
         <limit>
-          <lower>-0.18</lower>
+          <lower>-0.174533</lower>
           <upper>1.58</upper>
         </limit>
         <dynamics>

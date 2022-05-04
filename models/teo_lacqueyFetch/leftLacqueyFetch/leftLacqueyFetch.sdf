@@ -31,14 +31,14 @@
         </material>
       </visual>
       <collision name='FrontalLeftWrist_collision'>
-				<pose>0.0 0.0 0.0 1.57079632679 0.0 0.0</pose>
+				<pose>0.0 0.0 -0.0 0.0 0.0 0.0</pose>
         <geometry>
           <mesh>
-            <scale>0.001 0.001 0.001</scale>
-            <uri>model://teo/meshes/collision/lacqueyFetch/FrontalWrist.stl</uri>
+            <!--scale>0.001 0.001 0.001</scale-->
+            <uri>model://teo/meshes/collision/lacqueyFetch/FrontalWristLow.stl</uri>
           </mesh>
         </geometry>
-				<max_contacts>10</max_contacts>
+				<max_contacts>2</max_contacts>
 				<surface>
 					<contact>
 						<ode>
@@ -94,7 +94,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>model://teo/meshes/collision/lacqueyFetch/PhalangeProximal.stl</uri>
+            <uri>model://teo/meshes/collision/lacqueyFetch/PhalangeProximalLow.stl</uri>
           </mesh>
         </geometry>
 				<max_contacts>2</max_contacts>
@@ -169,7 +169,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>model://teo/meshes/collision/lacqueyFetch/PhalangeDistal.stl</uri>
+            <uri>model://teo/meshes/collision/lacqueyFetch/PhalangeDistalLow.stl</uri>
           </mesh>
         </geometry>
 				<max_contacts>2</max_contacts>
@@ -243,7 +243,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>model://teo/meshes/collision/lacqueyFetch/PhalangeProximal.stl</uri>
+            <uri>model://teo/meshes/collision/lacqueyFetch/PhalangeProximalLow.stl</uri>
           </mesh>
         </geometry>
 				<max_contacts>2</max_contacts>
@@ -318,7 +318,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>model://teo/meshes/collision/lacqueyFetch/PhalangeDistal.stl</uri>
+            <uri>model://teo/meshes/collision/lacqueyFetch/PhalangeDistalLow.stl</uri>
           </mesh>
         </geometry>
 				<max_contacts>2</max_contacts>
@@ -393,7 +393,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>model://teo/meshes/collision/lacqueyFetch/PhalangeProximal.stl</uri>
+            <uri>model://teo/meshes/collision/lacqueyFetch/PhalangeProximalLow.stl</uri>
           </mesh>
         </geometry>
 				<max_contacts>2</max_contacts>
@@ -468,7 +468,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>model://teo/meshes/collision/lacqueyFetch/PhalangeDistal.stl</uri>
+            <uri>model://teo/meshes/collision/lacqueyFetch/PhalangeDistalLow.stl</uri>
           </mesh>
         </geometry>
 				<max_contacts>2</max_contacts>

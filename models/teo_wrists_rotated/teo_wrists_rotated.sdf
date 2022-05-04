@@ -50,12 +50,12 @@
 
     <include>
       <pose>0 -0.26292 0.4982 0 -0 0</pose>
-      <uri>model://teo_lacqueyFetch/rightArmLacqueyFetch</uri>
+      <uri>model://teo_wrists_rotated/rightArmWristsRotated</uri>
     </include>
 
     <include>
       <pose>0 0.26292 0.4982 0 -0 0</pose>
-      <uri>model://teo_lacqueyFetch/leftArmLacqueyFetch</uri>
+      <uri>model://teo_wrists_rotated/leftArmWristsRotated</uri>
     </include>
 
     <include>
@@ -69,7 +69,6 @@
     </include>
 
     <pose>0 0 0.845 0 -0 0</pose>
-    <!--plugin name='pose publisher' filename='libgazebo_yarp_modelposepublisher.so'></plugin-->
 
   </model>
 </sdf>
